@@ -1,0 +1,14 @@
+create table `community`(
+`community_key` int auto_increment not null,
+`id` varchar(16) not null,
+`title` varchar(100) not null,
+`content` varchar(10000) not null,
+`img1` varchar(1000),
+`img2` varchar(1000),
+`img3` varchar(1000),
+`first_time` datetime DEFAULT CURRENT_TIMESTAMP not null,
+`update_time` datetime DEFAULT CURRENT_TIMESTAMP not null,
+
+foreign key (`id`) references account(`id`),
+primary key(`community_key`)
+) DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;

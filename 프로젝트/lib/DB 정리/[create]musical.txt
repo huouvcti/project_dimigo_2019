@@ -1,0 +1,9 @@
+create table `musical`(
+`musical_key` int auto_increment not null,
+`img` varchar(1000) not null,
+`title` varchar(50) not null,
+`synopsis` varchar(1500),
+`type` varchar(10) not null,
+
+primary key(`musical_key`)
+) DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;

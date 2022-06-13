@@ -1,0 +1,9 @@
+create table `musical_youtube`(
+`musical_youtube_key` int auto_increment not null,
+`title` varchar(200) not null,
+`link` varchar(1000) not null,
+`musical_key` int(50),
+
+primary key(`musical_youtube_key`),
+foreign key (`musical_key`) references musical(`musical_key`)
+) DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;

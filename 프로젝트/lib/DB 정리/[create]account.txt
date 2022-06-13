@@ -1,0 +1,8 @@
+create table `account`(
+`id` varchar(16) not null,
+`pw` varchar(100) not null,
+`name` varchar(10) not null,
+`email` varchar(30) not null,
+`admin` tinyint(1) default 0 not null,
+primary key(`id`)
+) DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;

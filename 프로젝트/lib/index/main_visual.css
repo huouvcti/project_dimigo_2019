@@ -1,0 +1,90 @@
+.main_visual{
+  position: relative;
+  width: 100%;
+  height: 50vw;
+}
+
+/* img */
+.main_visual .main_visual_img img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: 2s;
+}
+
+/* btn */
+.main_visual .main_visual_btn{
+  position: absolute;
+  bottom: 2vw;
+  margin: 0 42%;
+  width: 16%;
+  text-align: center;
+  white-space : nowrap;
+}
+.main_visual .main_visual_btn input[type="radio"]{
+  display: none;
+}
+.main_visual .main_visual_btn label{
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 20px;
+  border: 1.5px solid #fff;
+  cursor: pointer;
+  transition: 2s;
+}
+
+/* contents */
+.main_visual_contents{
+  position: absolute;
+  z-index: 1000;
+  color: #fff;
+  width: 30%;
+  height: 45%;
+  top: 25%;
+  left: 55%;
+}
+.main_visual_contents h1{
+  font-size: 4vw;
+  margin: 0;
+  width: 100%;
+  margin-bottom: 3vw;
+  animation: main_visual_contents 1s;
+}
+.main_visual_contents h2{
+  font-size: 2vw;
+  margin: 0;
+  width: 100%;
+  margin-bottom: 3vw;
+  animation: main_visual_contents 2s;
+}
+.main_visual_contents a{
+  font-size: 1vw;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 5%;
+  width: 35%;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  transition: 0.5s;
+  animation: main_visual_contents 3s;
+}
+.main_visual_contents a:hover{
+  color: #000;
+  background: #fff;
+}
+.main_visual_contents #left{
+}
+.main_visual_contents #right{
+  left: 55%;
+}
+
+@keyframes main_visual_contents {
+  0%{opacity: 0;}
+  60%{opacity: 0;}
+  100%{opacity: 1;}
+}

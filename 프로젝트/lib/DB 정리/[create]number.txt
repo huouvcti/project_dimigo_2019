@@ -1,0 +1,9 @@
+create table `number`(
+`number_key` varchar(50) not null,
+`number` varchar(50) not null,
+`role` varchar(30) not null,
+`musical_key` int(50),
+
+primary key(`number_key`),
+foreign key (`musical_key`) references musical(`musical_key`)
+) DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;

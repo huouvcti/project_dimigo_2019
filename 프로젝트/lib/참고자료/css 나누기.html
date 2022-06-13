@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>스타일 변경 예제</title>
+   <style type="text/css">
+      div{
+         transition: 1s ease;
+         width: 100px;
+         height: 100px;
+         background: blue;
+      }
+
+      div.close{
+         transform: rotate(90deg);
+         opacity: 0;
+         width: 0px;
+         height: 0px;
+      }
+      div.red{
+        background: red;
+      }
+   </style>
+</head>
+<body>
+
+   <div id="container" class=""></div>
+   <button onclick="closer()">닫기</button>
+   <button onclick="opener()">열기</button>
+   <button onclick="blue()">BLUE</button>
+
+   <script type="text/javascript">
+      function opener(){
+         document.getElementById('container').className = '';
+      }
+
+      function closer(){
+         document.getElementById('container').className = 'close';
+      }
+      function red(){
+         document.getElementById('container').className = 'red';
+      }
+   </script>
+
+</body>
+</html>

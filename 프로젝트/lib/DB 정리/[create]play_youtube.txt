@@ -1,0 +1,9 @@
+create table `play_youtube`(
+`play_youtube_key` int auto_increment not null,
+`title` varchar(200) not null,
+`link` varchar(1000) not null,
+`play_key` int(50),
+
+primary key(`play_youtube_key`),
+foreign key (`play_key`) references play(`play_key`)
+) DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;

@@ -1,0 +1,10 @@
+create table `actor`(
+`actor_key` int auto_increment not null,
+`actor` varchar(50) not null,
+`img` varchar(1000) not null,
+`birth` date,
+`debut_date` varchar(50),
+`debut` varchar(200),
+
+primary key(`actor_key`)
+) DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
